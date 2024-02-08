@@ -57,3 +57,35 @@ const percentages = [
 ];
 
 console.log(percentages);
+
+const neighbours = ["Nigeria", "Cameroon", "Ghana"];
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany"))
+  console.log("Probably not a cnetral European country :D");
+
+neighbours[1] = "Columbia";
+console.log(neighbours);
+
+const myCountry = {
+  country: "Nigeria",
+  capital: "Lagos",
+  language: "english",
+  population: 206,
+  neighbours: ["Columbia", "Cameroon", "Ghana"],
+};
+console.log(myCountry);
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+
+myCountry["population"] -= 2;
+console.log(myCountry.population);
