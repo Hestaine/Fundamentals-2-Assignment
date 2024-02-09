@@ -77,6 +77,14 @@ const myCountry = {
   language: "english",
   population: 206,
   neighbours: ["Columbia", "Cameroon", "Ghana"],
+
+  describe: function () {
+    this.countryDescribe = `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`;
+    return this.countryDescribe;
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+  },
 };
 console.log(myCountry);
 
@@ -89,3 +97,12 @@ console.log(myCountry.population);
 
 myCountry["population"] -= 2;
 console.log(myCountry.population);
+
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry.countryDescribe);
+console.log(myCountry.isIsland);
+
+for (let vote = 1; vote <= 50; vote++) {
+  console.log(`Voter number ${vote} is currently voting`);
+}
