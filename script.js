@@ -1,4 +1,5 @@
 "use strict";
+/*
 function describeCountry(country, population, capitalCity) {
   return `${country} has ${population} million people and it's capital city is ${capitalCity}`;
 }
@@ -106,3 +107,34 @@ console.log(myCountry.isIsland);
 for (let vote = 1; vote <= 50; vote++) {
   console.log(`Voter number ${vote} is currently voting`);
 }
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  console.log(listOfNeighbours[i].length);
+  for (let y = 0; y < listOfNeighbours[i].length; y++) {
+    console.log(`Neighbours: ${listOfNeighbours[i][y]}`);
+  }
+}
+
+const percentage3 = [];
+let i = 0;
+
+while (i < populations.length) {
+  percentage3.push(percentageOfWorld1(populations[i]));
+  i++;
+}
+
+console.log(percentage3);
+*/
